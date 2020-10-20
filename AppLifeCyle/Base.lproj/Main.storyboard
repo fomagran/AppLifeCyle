@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppLifeCyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFy-yL-pO1">
+                                <rect key="frame" x="70" y="438" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="iCi-fl-3eg"/>
+                                    <constraint firstAttribute="height" constant="30" id="stz-EY-Z0F"/>
+                                </constraints>
+                                <state key="normal" title="Normal"/>
+                                <connections>
+                                    <action selector="loginNormal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4M-nn-ZXY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7U-I0-z6N">
+                                <rect key="frame" x="184.5" y="574" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="EPC-Yi-Duh"/>
+                                    <constraint firstAttribute="width" constant="45" id="sZN-O6-Tp2"/>
+                                </constraints>
+                                <state key="normal" image="playIcon"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Etg-DB-Q4P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxE-jt-Rg3">
+                                <rect key="frame" x="179.5" y="240" width="55.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caa-We-yP4">
+                                <rect key="frame" x="274" y="438" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Y1d-tG-XZl"/>
+                                    <constraint firstAttribute="width" constant="70" id="ePx-a3-iDv"/>
+                                </constraints>
+                                <state key="normal" title="Premium"/>
+                                <connections>
+                                    <action selector="loginPremium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRK-id-I7h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Caa-We-yP4" secondAttribute="trailing" constant="70" id="4Su-22-hvq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j7U-I0-z6N" secondAttribute="bottom" constant="243" id="6Xq-rW-vYy"/>
+                            <constraint firstItem="sxE-jt-Rg3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="7qc-RH-MoX"/>
+                            <constraint firstItem="iFy-yL-pO1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="7uw-cS-53g"/>
+                            <constraint firstItem="j7U-I0-z6N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GAV-lu-BTu"/>
+                            <constraint firstItem="sxE-jt-Rg3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H1i-Wk-zTE"/>
+                            <constraint firstItem="Caa-We-yP4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="KUs-97-KMw"/>
+                            <constraint firstItem="iFy-yL-pO1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kzJ-ZJ-nt1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="normalBtn" destination="iFy-yL-pO1" id="qD1-o4-qAq"/>
+                        <outlet property="playBtn" destination="j7U-I0-z6N" id="mxj-RW-jfZ"/>
+                        <outlet property="premiumBtn" destination="Caa-We-yP4" id="Yhy-JH-9Kw"/>
+                        <outlet property="statusLabel" destination="sxE-jt-Rg3" id="1oK-9T-XQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playIcon" width="225" height="225"/>
+    </resources>
+</document>
