@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0485FB8825482B4D00741036 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485FB8725482B4D00741036 /* SceneDelegate.swift */; };
+		0485FB8A25482B8600741036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485FB8925482B8600741036 /* ViewController.swift */; };
 		6FBD12E4253EEFF9007117BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD12E3253EEFF9007117BC /* AppDelegate.swift */; };
 		6FBD12EB253EEFF9007117BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBD12E9253EEFF9007117BC /* Main.storyboard */; };
 		6FBD12EE253EEFF9007117BC /* AppLifeCyle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD12EC253EEFF9007117BC /* AppLifeCyle.xcdatamodeld */; };
 		6FBD12F0253EEFFB007117BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FBD12EF253EEFFB007117BC /* Assets.xcassets */; };
 		6FBD12F3253EEFFB007117BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBD12F1253EEFFB007117BC /* LaunchScreen.storyboard */; };
-		6FBD12FB253EFDC3007117BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD12FA253EFDC3007117BC /* SceneDelegate.swift */; };
-		6FBD12FD253F001C007117BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD12FC253F001C007117BC /* ViewController.swift */; };
 		6FBD1301253F09B3007117BC /* Gang Gang Schiele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FBD1300253F09B3007117BC /* Gang Gang Schiele.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0485FB8725482B4D00741036 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0485FB8925482B8600741036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6FBD12E0253EEFF9007117BC /* AppLifeCyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLifeCyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBD12E3253EEFF9007117BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FBD12EA253EEFF9007117BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,8 +27,6 @@
 		6FBD12EF253EEFFB007117BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FBD12F2253EEFFB007117BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FBD12F4253EEFFB007117BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FBD12FA253EFDC3007117BC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
-		6FBD12FC253F001C007117BC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
 		6FBD1300253F09B3007117BC /* Gang Gang Schiele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gang Gang Schiele.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6FBD12E3253EEFF9007117BC /* AppDelegate.swift */,
-				6FBD12FA253EFDC3007117BC /* SceneDelegate.swift */,
-				6FBD12FC253F001C007117BC /* ViewController.swift */,
+				0485FB8725482B4D00741036 /* SceneDelegate.swift */,
+				0485FB8925482B8600741036 /* ViewController.swift */,
 				6FBD12E9253EEFF9007117BC /* Main.storyboard */,
 				6FBD12EF253EEFFB007117BC /* Assets.xcassets */,
 				6FBD1300253F09B3007117BC /* Gang Gang Schiele.mp3 */,
@@ -145,10 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0485FB8A25482B8600741036 /* ViewController.swift in Sources */,
+				0485FB8825482B4D00741036 /* SceneDelegate.swift in Sources */,
 				6FBD12E4253EEFF9007117BC /* AppDelegate.swift in Sources */,
 				6FBD12EE253EEFF9007117BC /* AppLifeCyle.xcdatamodeld in Sources */,
-				6FBD12FD253F001C007117BC /* ViewController.swift in Sources */,
-				6FBD12FB253EFDC3007117BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
